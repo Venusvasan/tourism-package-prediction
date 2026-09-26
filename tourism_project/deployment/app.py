@@ -67,7 +67,7 @@ st.divider()
 
 if st.button("Predict Purchase"):
     prediction = model.predict(input_data)[0]
-    probabilities = model.predict_proba(input_df)[0]
+    probabilities = model.predict_proba(input_data)[0]
     purchase_prob = probabilities[1]
     st.subheader("Prediction Result:")
     if prediction == 1:
