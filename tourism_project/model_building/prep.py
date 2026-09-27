@@ -44,3 +44,4 @@ y_train.to_csv("ytrain.csv", index=False)
 y_test.to_csv("ytest.csv", index=False)
 
 print("Data prepared: train/test splits written.")
+print(f"the shape of the train and test splits are {X_train.shape} and {X_test.shape}")
